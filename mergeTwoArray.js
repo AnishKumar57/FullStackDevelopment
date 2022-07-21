@@ -1,21 +1,21 @@
-function mergeTwoArray(arr1,m,arr2,n){
-    var i,j;
-    while(i<m && j<n){
-        var arr=new Array[m+n];
-        if(arr1[i]<arr[j]){
-            arr.push[i];
-            i++  
-        } 
-        else {
-            arr.push[j];
-            j++;
+function mergeTwoArray(Arr1,m,Arr2,n){
+  let resArr=[];
+    i=1; j=1;
+      while(i<m && j<n){
+        if(Arr1[i]<Arr2[j]{
+          resArr.push(Arr1[i]);
+          i++;
+         }
+         else {
+          resArr.push(Arr2[j]);
+          j++;
+          }
+         while(i<m){
+          resArr.push(Arr1[i]);
+          i++;
+          }
+          while(j<n){
+          resArr.push(Arr2[j]);
+          j++;
+          }
         }
-        
-    }
-return arr;
-}
-
-arr1=[3,6,9,12,15];
-arr2=[7,14,21,28,35];
-mergeTwoArray(arr1,5,arr2,5);
-console.log(arr);
